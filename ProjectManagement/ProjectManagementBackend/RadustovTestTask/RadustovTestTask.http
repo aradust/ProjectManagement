@@ -1,0 +1,6 @@
+@RadustovTestTask_HostAddress = http://localhost:5224
+
+GET {{RadustovTestTask_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

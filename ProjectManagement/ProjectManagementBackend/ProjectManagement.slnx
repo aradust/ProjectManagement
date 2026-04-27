@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="RadustovTestTask.BLL/ProjectManagement.BLL.csproj" />
+  <Project Path="RadustovTestTask.DAL/ProjectManagement.DAL.csproj" />
+  <Project Path="RadustovTestTask.Tests/ProjectManagement.Tests.csproj" Id="a9a8cc05-4279-4ef9-832b-d583dbbb1a62" />
+  <Project Path="RadustovTestTask/ProjectManagement.API.csproj" />
+</Solution>
