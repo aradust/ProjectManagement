@@ -107,27 +107,24 @@ ProjectManagement/
 - .NET SDK 10
 - Node.js 24+
 - npm 11+
+-  Visual Studio
 
 ### 2. Запуск backend
 
-Перейдите в папку API:
+Откройте решение через IDE Visual Studio.
+
+Выберите в качестве запускаемого проекта `ProjectManager.API`.
+
+Перейдите в консоль дмчпетчера пакетов, выберите проект по умолчанию `ProjectManager.DAL`.
+
+Создайте миграцию
 
 ```powershell
-cd .\ProjectManagementBackend\RadustovTestTask\
+Add-Migration InitialMigration
+Update-Database
 ```
 
-При необходимости создайте и примените миграцию:
-
-```powershell
-dotnet ef migrations add InitialMigration
-dotnet ef database update
-```
-
-Запустите API:
-
-```powershell
-dotnet run
-```
+Запустите проект через IDE.
 
 По умолчанию backend стартует на:
 
@@ -157,11 +154,7 @@ Frontend будет доступен по адресу:
 
 ## Запуск тестов
 
-Из папки backend можно выполнить:
-
-```powershell
-dotnet test .\ProjectManagement.slnx
-```
+Перейти в тестовый проект, используя обозреватель тестов, запустить тесты.
 
 ## Что покрыто тестами
 
@@ -174,6 +167,7 @@ dotnet test .\ProjectManagement.slnx
 - документов.
 
 ## Интерфейс приложения
+
 Пример пользовательского сценария представлен в ReadME файле на следующем уровне вложенности
 
 ## Итог
